@@ -1,4 +1,4 @@
-# keyVis <img src="images/kiwi.png" alt="drawing" style="width: 30px;"/> <img src="images/kiwi.png" alt="drawing" style="width: 30px;"/> <img src="images/kiwi.png" alt="drawing" style="width: 30px;"/>
+# keyVis 
 
 Program to visualize pressed keys on keyboard.
 
@@ -12,3 +12,4 @@ Download this matching module from [www.lfd.uci.edu](https://www.lfd.uci.edu/~go
 
 Navigate in command prompt to the download location and execute "pip install pyHook-...".
 
+<img src="images/kiwi.png" alt="drawing"/>
