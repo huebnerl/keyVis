@@ -8,6 +8,7 @@ key_map = {
         "Snapshot": "Druck",
         "Escape":   "Esc",
         "Lwin":     "Win",
-        "Rwin":     "Win"
+        "Rwin":     "Win",
+        "Space":    " ",
         }
 
