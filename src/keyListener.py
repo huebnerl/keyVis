@@ -1,4 +1,5 @@
 from gui import KeyDisplay
+from keyMap import key_map
 
 import pyHook
 
@@ -15,6 +16,12 @@ class KeyListener:
         self.key_display.start()
 
     def on_keyboard_event(self, event):
-        self.key_display.print(event.Key)
+        print("[ Key pressed: " + event.Key + " ]")
+        
+        shown_key = event.Key
+        if shown_key in key_map:
+            shown_key = key_map[shown_key]
+
+        self.key_display.print(shown_key)
         return True
 
