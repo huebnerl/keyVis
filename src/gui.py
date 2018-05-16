@@ -8,7 +8,7 @@ class KeyDisplay:
         self.root = tk.Tk()
         self.label = tk.Label(self.root, font=("Helvetica", 100, "bold"),  fg="grey", bg='white')
 
-        self.root.configure(background='white')
+        self.root.config(background='white')
         self.root.overrideredirect(True)
         self.root.geometry("%dx%d+%d+%d" % (self.root.winfo_screenwidth(),
             self.root.winfo_screenheight(), 0, 0))
@@ -24,6 +24,15 @@ class KeyDisplay:
     def print(self, print_text):
         self.label.config(width=len(print_text))
         self.label.config(text=print_text)
+        self.label.update()
+
+    def append(self, append_text):
+        width = self.label.cget("width") + len(append_text)
+        self.label.config(width = width)
+
+        text = self.label.cget("text") + append_text
+        self.label.config(text=text)
+
         self.label.update()
         
     def __del__(self):
