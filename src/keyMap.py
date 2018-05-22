@@ -9,6 +9,6 @@ key_map = {
         "Escape":   "Esc",
         "Lwin":     "Win",
         "Rwin":     "Win",
-        "Space":    " ",
+        "Space":    " "
         }
 

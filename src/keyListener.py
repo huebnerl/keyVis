@@ -1,5 +1,5 @@
 from gui import KeyDisplay
-from keyMap import key_map
+from keyMap import *
 
 import time
 import pyHook
@@ -25,8 +25,8 @@ class KeyListener:
         shown_key = event.Key
         if shown_key in key_map:
             shown_key = key_map[shown_key]
-
-        if (self.t1 - self.t2) > 700:
+        
+        if (self.t1 - self.t2) > 500:
             self.key_display.print(shown_key)
         else:
             self.key_display.append(shown_key)
